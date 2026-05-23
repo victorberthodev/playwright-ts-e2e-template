@@ -1,0 +1,48 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '07:00'
+      timezone: America/Sao_Paulo
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: chore
+      include: scope
+    labels:
+      - dependencies
+      - npm
+    groups:
+      playwright:
+        patterns:
+          - '@playwright/*'
+          - playwright
+          - playwright-*
+          - eslint-plugin-playwright
+      eslint:
+        patterns:
+          - eslint
+          - '@eslint/*'
+          - '@typescript-eslint/*'
+          - eslint-config-*
+          - eslint-plugin-*
+      typescript:
+        patterns:
+          - typescript
+          - '@types/*'
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: ci
+      include: scope
+    labels:
+      - dependencies
+      - github-actions
