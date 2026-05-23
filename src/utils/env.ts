@@ -24,8 +24,8 @@ if (!isEnvironment(testEnv)) {
 }
 
 const cwd = process.cwd();
-loadDotenv({ path: path.resolve(cwd, '.env') });
-loadDotenv({ path: path.resolve(cwd, `.env.${testEnv}`), override: false });
+loadDotenv({ path: path.resolve(cwd, '.env'), quiet: true });
+loadDotenv({ path: path.resolve(cwd, `.env.${testEnv}`), override: false, quiet: true });
 
 const defaults = ENVIRONMENT_DEFAULTS[testEnv];
 
