@@ -1,0 +1,47 @@
+{
+  "name": "playwright-ts-e2e-template",
+  "version": "0.1.0",
+  "description": "Production-grade Playwright + TypeScript E2E template with multi-env, Allure, CI/CD and strict QA conventions.",
+  "private": true,
+  "license": "MIT",
+  "author": "Victor <victorberthotech@gmail.com>",
+  "keywords": [
+    "playwright",
+    "typescript",
+    "e2e-testing",
+    "qa-automation",
+    "test-automation",
+    "allure",
+    "github-actions",
+    "template"
+  ],
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.1",
+    "@commitlint/config-conventional": "^21.0.1",
+    "@faker-js/faker": "^10.4.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
+    "@typescript-eslint/parser": "^8.59.4",
+    "allure-commandline": "^2.41.0",
+    "allure-playwright": "^3.9.0",
+    "dotenv": "^17.4.2",
+    "dotenv-cli": "^11.0.0",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-playwright": "^2.10.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.5",
+    "prettier": "^3.8.3",
+    "typescript": "^5.9.3",
+    "zod": "^4.4.3"
+  }
+}

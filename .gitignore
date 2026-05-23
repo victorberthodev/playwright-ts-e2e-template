@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Playwright
+playwright-report/
+test-results/
+playwright/.auth/
+playwright/.cache/
+
+# Allure
+allure-results/
+allure-report/
+.allure/
+
+# Environment files (keep .example versions)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Temp
+*.tmp
+.cache/
+coverage/
