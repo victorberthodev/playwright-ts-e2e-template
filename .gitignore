@@ -12,8 +12,9 @@ playwright/.cache/
 allure-results/
 allure-report/
 .allure/
+
+# Local-only SDD scaffold (CLAUDE.md is committed as template doc)
 PROMPT.md
-CLAUDE.md
 
 # Environment files (keep .example versions)
 .env
