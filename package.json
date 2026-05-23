@@ -1,6 +1,6 @@
 {
   "name": "playwright-ts-e2e-template",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Production-grade Playwright + TypeScript E2E template with multi-env, Allure, CI/CD and strict QA conventions.",
   "private": true,
   "type": "module",
