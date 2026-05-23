@@ -37,6 +37,7 @@
     "test:headed": "playwright test --headed",
     "test:list": "playwright test --list",
     "test:report": "allure serve allure-results",
+    "allure:serve": "allure serve allure-results",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
     "prepare": "husky"

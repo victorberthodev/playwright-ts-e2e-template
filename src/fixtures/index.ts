@@ -35,5 +35,29 @@ const pageTest = base.extend<PageFixtures>({
 });
 
 export const test = mergeTests(pageTest, apiTest);
+
+/**
+ * Failure-only afterEach — attaches quick failure context to Allure and
+ * the HTML reporter without re-attaching the trace / screenshot / video
+ * that the reporter already grabs automatically (those are wired via
+ * `use.trace|screenshot|video: retain-on-failure` in playwright.config).
+ *
+ * Skipped on the `api` project where there's no Page to inspect.
+ */
+test.afterEach(async ({ page }, testInfo) => {
+  const failed = testInfo.status !== testInfo.expectedStatus;
+  const isUiProject = testInfo.project.name.startsWith('ui-');
+  if (!failed || !isUiProject) return;
+
+  await testInfo.attach('final-url', {
+    body: page.url(),
+    contentType: 'text/plain',
+  });
+  await testInfo.attach('viewport-html', {
+    body: await page.content(),
+    contentType: 'text/html',
+  });
+});
+
 export { expect } from '@playwright/test';
 export type { ApiFixtures };
