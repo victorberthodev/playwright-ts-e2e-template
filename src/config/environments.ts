@@ -15,7 +15,12 @@ export interface EnvironmentConfig {
 export const ENVIRONMENT_DEFAULTS: Record<Environment, EnvironmentConfig> = {
   dev: {
     baseUrl: 'https://www.saucedemo.com',
-    apiUrl: 'https://reqres.in/api',
+    // JSONPlaceholder picked over reqres.in: reqres.in started requiring an
+    // x-api-key header in 2025, which breaks the "clone and run" promise.
+    // JSONPlaceholder is fully open and stable. Trade-off: writes are
+    // simulated (echo + fake id), so POST/PUT/DELETE tests verify the
+    // contract, not real persistence.
+    apiUrl: 'https://jsonplaceholder.typicode.com',
   },
   stg: {
     baseUrl: '',
