@@ -1,0 +1,14 @@
+node_modules/
+pnpm-lock.yaml
+playwright-report/
+allure-results/
+allure-report/
+test-results/
+playwright/.auth/
+dist/
+coverage/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+!.env.*.example
