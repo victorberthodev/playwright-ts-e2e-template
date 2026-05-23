@@ -12,6 +12,8 @@ playwright/.cache/
 allure-results/
 allure-report/
 .allure/
+PROMPT.md
+CLAUDE.md
 
 # Environment files (keep .example versions)
 .env
