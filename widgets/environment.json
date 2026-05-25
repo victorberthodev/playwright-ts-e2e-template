@@ -1,0 +1,1 @@
+[{"values":["dev"],"name":"TEST_ENV"},{"values":["https://www.saucedemo.com"],"name":"BASE_URL"},{"values":["https://jsonplaceholder.typicode.com"],"name":"API_URL"},{"values":["true"],"name":"CI"},{"values":["v20.20.2"],"name":"Node"},{"values":["linux (x64)"],"name":"Platform"}]
