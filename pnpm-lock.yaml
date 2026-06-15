@@ -36,8 +36,8 @@ importers:
         specifier: ^2.41.0
         version: 2.41.0
       allure-playwright:
-        specifier: ^3.9.0
-        version: 3.9.0(@playwright/test@1.60.0)
+        specifier: ^3.10.0
+        version: 3.10.0(@playwright/test@1.60.0)
       dotenv:
         specifier: ^17.4.2
         version: 17.4.2
@@ -327,16 +327,16 @@ packages:
     resolution: {integrity: sha512-X3/zXt3i1q9k1ZMQLUKKfHRlwrxsSly6TVRtowYvcFskK5Q8FBtf1pm9h/bXQwG16f9M4ngvI77QhaWngy00og==}
     hasBin: true
 
-  allure-js-commons@3.9.0:
-    resolution: {integrity: sha512-uVQcGE6MWIvGR/zW1XEUwHXUQa1EJKY0Cah+0TZK1qKuw6ptyhftDr34XE3wExTyCZirRrI98dbRtPeYYuyI+g==}
+  allure-js-commons@3.10.0:
+    resolution: {integrity: sha512-Tf2nYiC7VDNgvM5t0Av9KfQ+cO7ScAzCG2Ikhy9BhzAZoXymjN0I1uyZfsf+iaMJhiuGv7Slf86dBQDHHS3nvw==}
     peerDependencies:
-      allure-playwright: 3.9.0
+      allure-playwright: 3.10.0
     peerDependenciesMeta:
       allure-playwright:
         optional: true
 
-  allure-playwright@3.9.0:
-    resolution: {integrity: sha512-bv8J4BaHhs7Cd7GaAz7xEuD6vthZuw235YtHpe/9y7FDPn3oB6n6KcxZOhU0lYvwVKO5cUVqnquHKqoLkSCrgA==}
+  allure-playwright@3.10.0:
+    resolution: {integrity: sha512-MFejAaHVuToRB/LGWlVC6Ai2y2vWZ+VqB786IINJY2c74wAwz18oaih/NVXQaDk+sDHkjKzcSuVM9cmaA/OBaw==}
     peerDependencies:
       '@playwright/test': '>=1.53.0'
 
@@ -1239,16 +1239,16 @@ snapshots:
 
   allure-commandline@2.41.0: {}
 
-  allure-js-commons@3.9.0(allure-playwright@3.9.0(@playwright/test@1.60.0)):
+  allure-js-commons@3.10.0(allure-playwright@3.10.0(@playwright/test@1.60.0)):
     dependencies:
       md5: 2.3.0
     optionalDependencies:
-      allure-playwright: 3.9.0(@playwright/test@1.60.0)
+      allure-playwright: 3.10.0(@playwright/test@1.60.0)
 
-  allure-playwright@3.9.0(@playwright/test@1.60.0):
+  allure-playwright@3.10.0(@playwright/test@1.60.0):
     dependencies:
       '@playwright/test': 1.60.0
-      allure-js-commons: 3.9.0(allure-playwright@3.9.0(@playwright/test@1.60.0))
+      allure-js-commons: 3.10.0(allure-playwright@3.10.0(@playwright/test@1.60.0))
 
   ansi-escapes@7.3.0:
     dependencies:
