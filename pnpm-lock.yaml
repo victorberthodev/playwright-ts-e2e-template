@@ -33,8 +33,8 @@ importers:
         specifier: ^8.59.4
         version: 8.59.4(eslint@10.4.0(jiti@2.6.1))(typescript@5.9.3)
       allure-commandline:
-        specifier: ^2.41.0
-        version: 2.41.0
+        specifier: ^2.43.0
+        version: 2.43.0
       allure-playwright:
         specifier: ^3.9.0
         version: 3.9.0(@playwright/test@1.60.0)
@@ -323,8 +323,8 @@ packages:
   ajv@8.20.0:
     resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
 
-  allure-commandline@2.41.0:
-    resolution: {integrity: sha512-X3/zXt3i1q9k1ZMQLUKKfHRlwrxsSly6TVRtowYvcFskK5Q8FBtf1pm9h/bXQwG16f9M4ngvI77QhaWngy00og==}
+  allure-commandline@2.43.0:
+    resolution: {integrity: sha512-nsqccDOgi80fi9WjvBapZjlFlugodVWudotNtWx6XKiSI7NuN6oTWEkXnkxQBzNg02Yf9lZLtCFlKvjAlcpu6Q==}
     hasBin: true
 
   allure-js-commons@3.9.0:
@@ -1237,7 +1237,7 @@ snapshots:
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
-  allure-commandline@2.41.0: {}
+  allure-commandline@2.43.0: {}
 
   allure-js-commons@3.9.0(allure-playwright@3.9.0(@playwright/test@1.60.0)):
     dependencies:
